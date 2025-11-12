@@ -9,11 +9,11 @@
 ---
 
 ### 🧠 About Me
-- 🎓 Currently pursuing my **Engineering degree in Computer Science** at CY Tech.  
-- 🧩 Former preparatory student at the **Faculty of Sciences of Tunis (FST)**.  
-- 💡 Interested in **AI, automation, full-stack web development**, and **hackathons**.  
-- ⚙️ I enjoy solving real-world problems through code and learning emerging tech.  
-- 🎮 I also love analyzing video games and taking part in programming competitions.
+- 🎓 Engineering student at **CY Tech – Cergy Paris Université**  
+- 🧩 Former preparatory student at the **Faculty of Sciences of Tunis (FST)**  
+- 💡 Interested in **AI, automation, full-stack web development**, and **cybersecurity**  
+- 🏆 Participant in multiple hackathons (IEEEXtreme 18.0, Cyber Horizon, AI Hackathon)  
+- ⚙️ Passionate about building real-world projects that connect AI and software development  
 
 ---
 
@@ -24,30 +24,48 @@
 | 💻 Languages | Python, C, C++, Java, HTML, CSS, JavaScript, PHP |
 | ⚙️ Frameworks | Spring Boot, React |
 | 🧩 Tools | Git, GitHub, Linux, Docker |
-| 🧠 Focus | AI, Cybersecurity, Web Dev, Automation |
+| 🧠 Focus | AI, Cybersecurity, Automation, Web Development |
 
 ---
 
-### 🏆 Projects & Highlights
-- 🧬 **Facial Recognition Attendance System** – Internship @ *Kernel Solutions & Innovation*  
-- ⚙️ **Car Rental Client App** – Spring Boot + Oracle  
-- 🧠 **Sign Language Recognition AI** – Hackathon project (🥈 2nd place)  
-- 🌐 [**crous_notifier_me**](https://github.com/khayem/crous_notifier_me) – automates meal updates  
-- 🧩 Competed in **IEEEXtreme 18.0**, **Cyber Horizon**, and multiple AI hackathons
+### 🏗️ Featured Projects
+
+#### 🧬 [Facial Recognition Attendance System](https://github.com/khayem487/facial-recognition-attendance)
+An internship project developed with **Kernel Solutions & Innovation**.  
+- Uses **Python**, **OpenCV**, and **Face Recognition** libraries  
+- Detects and identifies individuals in real time  
+- Logs attendance automatically using a database  
+- Designed for office and classroom automation  
+
+#### 🚘 [Car Rental Client App](https://github.com/khayem487/car-rental-client)
+A full-stack application using **Spring Boot** and **Oracle Database**  
+- Client management, vehicle rentals, and payment handling  
+- REST API backend + web client interface  
+
+#### 🍽️ [crous_notifier_me](https://github.com/khayem487/crous_notifier_me)
+Python script that automates **CROUS meal updates** and sends notifications  
 
 ---
 
-### 📫 How to Reach Me
+### 🧠 Hackathon Highlights
+- 🥈 **2nd place – Hackathon IA** – American Sign Language recognition system  
+- ⚡ **Cyber Horizon 1.0** – Network crisis simulation and incident analysis  
+- 💪 **IEEEXtreme 18.0** – 24-hour international programming competition  
+
+---
+
+### 📫 Connect with Me
+
 - 📧 [khayembg07@gmail.com](mailto:khayembg07@gmail.com)
 - 💼 [LinkedIn](https://linkedin.com/in/khayem-ben-ghorbel)
-- 🌍 [Portfolio (soon)](https://khayem.github.io/portfolio)
+- 🌐 [Portfolio (coming soon)](https://khayem.github.io/portfolio)
 
 ---
 
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=khayem487&show_icons=true&theme=tokyonight" alt="Khayem's GitHub stats" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=khayem487&show_icons=true&theme=tokyonight" height="150"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khayem487&layout=compact&theme=tokyonight" height="150"/>
 </p>
 
