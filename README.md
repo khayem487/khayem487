@@ -12,8 +12,8 @@
 - 🎓 Engineering student at **CY Tech – Cergy Paris Université**  
 - 🧩 Former preparatory student at the **Faculty of Sciences of Tunis (FST)**  
 - 💡 Interested in **AI, automation, full-stack web development**, and **cybersecurity**  
-- 🏆 Participant in multiple hackathons (IEEEXtreme 18.0, Cyber Horizon, AI Hackathon)  
-- ⚙️ Passionate about building real-world projects that connect AI and software development  
+- 🏆 Participant in hackathons including **IEEEXtreme 18.0**, **Cyber Horizon**, and **Hackathon IA (2nd place)**  
+- ⚙️ Passionate about building real-world projects that merge AI, code, and innovation  
 
 ---
 
@@ -31,26 +31,42 @@
 ### 🏗️ Featured Projects
 
 #### 🧬 [Facial Recognition Attendance System](https://github.com/khayem487/facial-recognition-attendance)
-An internship project developed with **Kernel Solutions & Innovation**.  
+Internship project developed with **Kernel Solutions & Innovation**.  
 - Uses **Python**, **OpenCV**, and **Face Recognition** libraries  
 - Detects and identifies individuals in real time  
 - Logs attendance automatically using a database  
-- Designed for office and classroom automation
+- Designed for office and classroom automation  
+**Tech:** ![Python](https://img.shields.io/badge/-Python-blue?logo=python) ![OpenCV](https://img.shields.io/badge/-OpenCV-critical?logo=opencv) ![SQLite](https://img.shields.io/badge/-SQLite-blue?logo=sqlite)
 
+---
+
+#### 🤟 [American Sign Language Recognition (Hackathon Project)](https://github.com/khayem487/ASL-Recognition)
+AI-based project that recognizes **American Sign Language gestures**.  
+- Built using **TensorFlow**, **Keras**, and **OpenCV**  
+- Trained on a custom dataset of hand gesture images  
+- Achieved **2nd place** at the **Hackathon IA** event  
+- Demonstrates computer vision + deep learning integration  
+**Tech:** ![Python](https://img.shields.io/badge/-Python-blue?logo=python) ![TensorFlow](https://img.shields.io/badge/-TensorFlow-orange?logo=tensorflow) ![Keras](https://img.shields.io/badge/-Keras-red?logo=keras) ![OpenCV](https://img.shields.io/badge/-OpenCV-critical?logo=opencv)
+
+---
 
 #### 🚘 [Car Rental Client App](https://github.com/khayem487/car-rental-client)
-A full-stack application using **Spring Boot** and **Oracle Database**  
+A full-stack web application using **Spring Boot** and **Oracle Database**.  
 - Client management, vehicle rentals, and payment handling  
 - REST API backend + web client interface  
+**Tech:** ![Java](https://img.shields.io/badge/-Java-red?logo=openjdk) ![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-brightgreen?logo=springboot) ![Oracle](https://img.shields.io/badge/-Oracle-orange?logo=oracle)
 
-#### 🏠 [crous_notifier_me](https://github.com/khayem487/crous_notifier_me)
-Python script that automates **CROUS logement (housing) updates** and sends notifications 
+---
+
+#### 🍽️ [crous_notifier_me](https://github.com/khayem487/crous_notifier_me)
+Python script that automates **CROUS meal updates** and sends notifications.  
+**Tech:** ![Python](https://img.shields.io/badge/-Python-blue?logo=python) ![Automation](https://img.shields.io/badge/-Automation-lightgrey?logo=python)
 
 ---
 
 ### 🧠 Hackathon Highlights
-- 🥈 **2nd place – Hackathon IA** – American Sign Language recognition system  
-- ⚡ **Cyber Horizon 1.0** – Network crisis simulation and incident analysis  
+- 🥈 **Hackathon IA** – American Sign Language recognition system (2nd place)  
+- ⚡ **Cyber Horizon 1.0** – Network crisis simulation & incident analysis  
 - 💪 **IEEEXtreme 18.0** – 24-hour international programming competition  
 
 ---
