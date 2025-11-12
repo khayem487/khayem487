@@ -36,9 +36,6 @@ An internship project developed with **Kernel Solutions & Innovation**.
 - Detects and identifies individuals in real time  
 - Logs attendance automatically using a database  
 - Designed for office and classroom automation
-**Tech:** ![Python](https://img.shields.io/badge/-Python-blue?logo=python) 
-![TensorFlow](https://img.shields.io/badge/-TensorFlow-orange?logo=tensorflow)
-![OpenCV](https://img.shields.io/badge/-OpenCV-critical?logo=opencv)
 
 
 #### 🚘 [Car Rental Client App](https://github.com/khayem487/car-rental-client)
