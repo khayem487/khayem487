@@ -42,8 +42,8 @@ A full-stack application using **Spring Boot** and **Oracle Database**
 - Client management, vehicle rentals, and payment handling  
 - REST API backend + web client interface  
 
-#### 🍽️ [crous_notifier_me](https://github.com/khayem487/crous_notifier_me)
-Python script that automates **CROUS meal updates** and sends notifications  
+#### 🏠 [crous_notifier_me](https://github.com/khayem487/crous_notifier_me)
+Python script that automates **CROUS logement (housing) updates** and sends notifications 
 
 ---
 
