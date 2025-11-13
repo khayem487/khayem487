@@ -75,7 +75,7 @@ Python script that automates **CROUS meal updates** and sends notifications.
 
 - 📧 [khayembg07@gmail.com](mailto:khayembg07@gmail.com)
 - 💼 [LinkedIn](https://linkedin.com/in/khayem-ben-ghorbel)
-- 🌐 [Portfolio (coming soon)](https://khayem.github.io/portfolio)
+- 🌐 [Portfolio](https://khayem487.github.io/portfolio)
 
 ---
 
