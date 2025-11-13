@@ -59,8 +59,7 @@ A full-stack web application using **Spring Boot** and **Oracle Database**.
 ---
 
 #### 🏠 [crous_notifier_me](https://github.com/khayem487/crous_notifier_me)
-Python script that automates **CROUS housing updates** and sends notifications 
-
+Python script that automates **CROUS housing updates** and sends notifications.  
 **Tech:** ![Python](https://img.shields.io/badge/-Python-blue?logo=python) ![Automation](https://img.shields.io/badge/-Automation-lightgrey?logo=python)
 
 ---
