@@ -76,6 +76,8 @@ A functional **Python proof of concept** to support the analysis of public calls
 - Added duplicate prevention, testing and technical documentation, then demonstrated the workflow.
 
 **Stack:** Python · document extraction / OCR · PostgreSQL · MCP · n8n<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-7C3AED?style=flat-square) ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+
 **Explore:** [GitHub — private repository](https://github.com/khayem487/onetech-tender-agent) · [Illustrative demo](https://khayem487.github.io/portfolio/stage-demo/) · [Internship details](https://khayem487.github.io/portfolio/#experience)
 
 <sub>The public walkthrough uses fictional data and a precomputed analysis to illustrate the workflow.</sub>
@@ -94,6 +96,8 @@ A webcam project for recognising **American Sign Language alphabet signs**, with
 - Awarded **2nd place at Hackathon IA**, organised by IEEE Computer Society.
 
 **Stack:** Python · OpenCV · MediaPipe · scikit-learn · Flask<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=mediapipe&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+
 **Explore:** [Source code](https://github.com/khayem487/asl-recognition) · [Live demo](https://asl-recognition-demo.onrender.com)
 
 ### 🧬 Facial Recognition Attendance · Kernel internship
@@ -109,6 +113,8 @@ A computer vision project developed during my internship at **Kernel Solutions &
 - Records attendance in a **SQLite** database for office and classroom use cases.
 
 **Stack:** Python · OpenCV · face recognition · SQLite<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+
 **Explore:** [Source code](https://github.com/khayem487/Facial-Recognition-Attendance) · [Live demo](https://facial-attendance-demo.onrender.com)
 
 ### 🚘 Car Rental Client · Full-stack application
@@ -124,6 +130,8 @@ A rental management web application connecting a **Spring Boot REST API**, an **
 - Connects the backend, database and client flow in one application.
 
 **Stack:** Java · Spring Boot · Oracle Database · REST API<br>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![Oracle](https://img.shields.io/badge/Oracle-CC2927?style=flat-square&logo=oracle&logoColor=white)
+
 **Explore:** [Source code](https://github.com/khayem487/car-rental-client) · [Live demo](https://car-rental-client-demo.onrender.com)
 
 ### 🏠 CROUS Notifier Me · Everyday automation
@@ -139,6 +147,8 @@ A **Python automation tool** born from a real student need: keeping up with hous
 - Uses a lightweight workflow to automate repetitive checks.
 
 **Stack:** Python · monitoring · notifications<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Automation](https://img.shields.io/badge/Automation-7C3AED?style=flat-square)
+
 **Explore:** [Source code](https://github.com/khayem487/crous_notifier_me)
 
 ## 🏆 Hackathons & challenges
