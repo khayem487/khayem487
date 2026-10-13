@@ -78,7 +78,7 @@ A functional **Python proof of concept** to support the analysis of public calls
 **Stack:** Python · document extraction / OCR · PostgreSQL · MCP · n8n<br>
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-7C3AED?style=flat-square) ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 
-**Explore:** [GitHub — private repository](https://github.com/khayem487/onetech-tender-agent) · [Illustrative demo](https://khayem487.github.io/portfolio/stage-demo/) · [Internship details](https://khayem487.github.io/portfolio/#experience)
+**Explore:** [GitHub — source code](https://github.com/khayem487/onetech-tender-agent) · [Illustrative demo](https://khayem487.github.io/portfolio/stage-demo/) · [Internship details](https://khayem487.github.io/portfolio/#experience)
 
 <sub>The public walkthrough uses fictional data and a precomputed analysis to illustrate the workflow.</sub>
 
