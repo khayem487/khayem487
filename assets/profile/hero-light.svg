@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-labelledby="title"><title id="title">Khayem Ben Ghorbel — AI, automation and software engineering</title>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6f8ff"/><stop offset="1" stop-color="#eef3ff"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="1" fill="#dbe3f5"/></pattern></defs>
+<rect x="1" y="1" width="958" height="328" rx="22" fill="url(#bg)" stroke="#d6def0"/>
+<rect x="1" y="1" width="958" height="328" rx="22" fill="url(#grid)"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<circle cx="893" cy="30" r="182" fill="#8b5cf6" opacity=".055"/>
+<circle cx="658" cy="310" r="140" fill="#06b6d4" opacity=".055"/>
+<rect x="52" y="44" width="230" height="28" rx="14" fill="#e0e8fa"/>
+<circle cx="67" cy="58" r="4" fill="#22c55e"/>
+<text x="80" y="63" fill="#52637e" font-size="13" font-weight="600" letter-spacing="1.2">ENGINEER IN THE MAKING</text>
+<text x="50" y="145" fill="#17233c" font-size="76" font-weight="750" letter-spacing="-2.6">Khayem</text>
+<text x="52" y="214" fill="#17233c" font-size="63" font-weight="750" letter-spacing="-2">Ben Ghorbel<tspan fill="#7c3aed">.</tspan></text>
+<rect x="54" y="244" width="58" height="4" rx="2" fill="url(#accent)"/>
+<text x="127" y="253" fill="#52637e" font-size="21" font-weight="500">AI · Automation · Software</text>
+<g fill="none" stroke="#d6def0" stroke-width="1.5"><circle cx="762" cy="163" r="109"/><circle cx="762" cy="163" r="86" stroke-dasharray="3 9"/><path d="M656 146 644 88 712 64M867 144 898 98M702 253 653 276M859 206 898 244"/></g>
+<rect x="690" y="102" width="144" height="122" rx="25" fill="#ffffff" stroke="#d6def0" stroke-width="2"/>
+<rect x="706" y="118" width="112" height="5" rx="2.5" fill="#e0e8fa"/>
+<circle cx="714" cy="120" r="3" fill="#8b5cf6"/><circle cx="727" cy="120" r="3" fill="#06b6d4"/><circle cx="740" cy="120" r="3" fill="#22c55e"/>
+<path d="m734 151-15 15 15 15m56-30 15 15-15 15m-22-36-12 43" fill="none" stroke="url(#accent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M722 204h26m9 0h45" stroke="#e0e8fa" stroke-width="4" stroke-linecap="round"/>
+<g><rect x="610" y="59" width="64" height="52" rx="15" fill="#ffffff" stroke="#d6def0"/><text x="642" y="92" text-anchor="middle" fill="#8b5cf6" font-size="23" font-weight="700">AI</text>
+<rect x="863" y="72" width="64" height="52" rx="15" fill="#ffffff" stroke="#d6def0"/><text x="895" y="105" text-anchor="middle" fill="#0891b2" font-size="23" font-weight="700">CV</text>
+<rect x="624" y="251" width="64" height="52" rx="15" fill="#ffffff" stroke="#d6def0"/><path d="m644 278 9 9 17-20" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+<rect x="864" y="226" width="64" height="52" rx="15" fill="#ffffff" stroke="#d6def0"/><path d="M881 251h30m-30-8h19m-19 16h24" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/></g>
+</g></svg>
