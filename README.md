@@ -113,8 +113,8 @@ A computer vision project developed during my internship at **Kernel Solutions &
 - Detects and identifies faces in real time using **OpenCV** and the **face recognition** library.
 - Connects the webcam workflow to registration and attendance records. The current cloud demo uses simplified **OpenCV matching** and persistent **private Vercel Blob** storage; the optional full local mode uses face_recognition/dlib.
 
-**Stack:** Python · OpenCV · face recognition · SQLite<br>
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+**Stack:** Python · Flask · OpenCV · private Vercel Blob (cloud demo); face recognition/dlib (optional local mode)<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-111827?style=flat-square&logo=flask&logoColor=white)
 
 **Explore:** [Source code](https://github.com/khayem487/Facial-Recognition-Attendance) · [Live demo](https://khayem-facial-attendance.vercel.app)
 
