@@ -13,6 +13,7 @@
   <a href="https://www.linkedin.com/in/khayem-bg/"><img src="https://img.shields.io/badge/LinkedIn-Let%27s_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a>
   <a href="mailto:khayembg07@gmail.com"><img src="https://img.shields.io/badge/Contact-Say_hello-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Khayem"></a>
   <a href="https://khayem487.github.io/portfolio/CV_Khayem_General_Informatique.pdf?v=864123f4"><img src="https://img.shields.io/badge/CV-Download_PDF-0F766E?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Download my CV as PDF"></a>
+  <img src="https://komarev.com/ghpvc/?username=khayem487&label=Profile+views&color=2563EB&style=for-the-badge" alt="Profile views — badge loads, not unique visitors">
 </p>
 
 > **Let's build something useful in 2027.**<br>
@@ -98,7 +99,7 @@ A webcam project for recognising **American Sign Language alphabet signs**, with
 **Stack:** Python · OpenCV · MediaPipe · scikit-learn · Flask<br>
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=mediapipe&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 
-**Explore:** [Source code](https://github.com/khayem487/asl-recognition) · [Live demo](https://asl-recognition-demo.onrender.com)
+**Explore:** [Source code](https://github.com/khayem487/asl-recognition) · [Live demo](https://khayem-asl.vercel.app)
 
 ### 🧬 Facial Recognition Attendance · Kernel internship
 
@@ -110,12 +111,12 @@ A webcam project for recognising **American Sign Language alphabet signs**, with
 A computer vision project developed during my internship at **Kernel Solutions & Innovation**, turning manual attendance recording into a software workflow.
 
 - Detects and identifies faces in real time using **OpenCV** and the **face recognition** library.
-- Records attendance in a **SQLite** database for office and classroom use cases.
+- Connects the webcam workflow to registration and attendance records. The current cloud demo uses simplified **OpenCV matching** and persistent **private Vercel Blob** storage; the optional full local mode uses face_recognition/dlib.
 
 **Stack:** Python · OpenCV · face recognition · SQLite<br>
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 
-**Explore:** [Source code](https://github.com/khayem487/Facial-Recognition-Attendance) · [Live demo](https://facial-attendance-demo.onrender.com)
+**Explore:** [Source code](https://github.com/khayem487/Facial-Recognition-Attendance) · [Live demo](https://khayem-facial-attendance.vercel.app)
 
 ### 🚘 Car Rental Client · Full-stack application
 
@@ -132,7 +133,7 @@ A rental management web application connecting a **Spring Boot REST API**, an **
 **Stack:** Java · Spring Boot · Oracle Database · REST API<br>
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![Oracle](https://img.shields.io/badge/Oracle-CC2927?style=flat-square&logo=oracle&logoColor=white)
 
-**Explore:** [Source code](https://github.com/khayem487/car-rental-client) · [Live demo](https://car-rental-client-demo.onrender.com)
+**Explore:** [Source code](https://github.com/khayem487/car-rental-client) · [Live demo](https://khayem-car-rental.vercel.app)
 
 ### 🏠 CROUS Notifier Me · Everyday automation
 
