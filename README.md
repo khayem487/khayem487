@@ -5,7 +5,7 @@
 
 <p align="center">
   <b>Computer Science Engineering student at CY Tech · Cergy, France</b><br>
-  From Tunisia 🇹🇳 · Building with AI, computer vision and code
+  Building with AI, computer vision and code
 </p>
 
 <p align="center">
