@@ -110,8 +110,8 @@ A webcam project for recognising **American Sign Language alphabet signs**, with
 
 A computer vision project developed during my internship at **Kernel Solutions & Innovation**, turning manual attendance recording into a software workflow.
 
-- Detects and identifies faces in real time using **OpenCV** and the **face recognition** library.
-- Connects the webcam workflow to registration and attendance records. The current cloud demo uses simplified **OpenCV matching** and persistent **private Vercel Blob** storage; the optional full local mode uses face_recognition/dlib.
+- The full local mode uses **OpenCV** and **face_recognition/dlib** for face detection and recognition.
+- The cloud demo uses **OpenCV detection and histogram matching**, with profiles and attendance records isolated per browser in **private Vercel Blob** storage. Profiles and their attendance records can be deleted from that space.
 
 **Stack:** Python · Flask · OpenCV · private Vercel Blob (cloud demo); face recognition/dlib (optional local mode)<br>
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-111827?style=flat-square&logo=flask&logoColor=white)
@@ -125,13 +125,13 @@ A computer vision project developed during my internship at **Kernel Solutions &
   <img src="assets/profile/rental-light.svg" width="100%" alt="Car rental application: vehicle booking, client management and a Java REST API">
 </picture>
 
-A rental management web application connecting a **Spring Boot REST API**, an **Oracle database**, and a web client.
+A rental management web application connecting a **Spring Boot** backend, a persistent **PostgreSQL** database, and a web client.
 
-- Covers vehicle booking and customer management.
-- Connects the backend, database and client flow in one application.
+- Supports **Google sign-in**, vehicle booking, booking history and returns.
+- Keeps accounts, reservations and sessions in PostgreSQL across deployments.
 
-**Stack:** Java · Spring Boot · Oracle Database · REST API<br>
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![Oracle](https://img.shields.io/badge/Oracle-CC2927?style=flat-square&logo=oracle&logoColor=white)
+**Stack:** Java · Spring Boot · PostgreSQL · Google OAuth 2.0<br>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
 **Explore:** [Source code](https://github.com/khayem487/car-rental-client) · [Live demo](https://khayem-car-rental.vercel.app)
 
