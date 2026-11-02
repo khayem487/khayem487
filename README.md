@@ -165,15 +165,18 @@ A **Python automation tool** born from a real student need: keeping up with hous
 
 ## 📊 Around GitHub
 
+<!-- Static cards refreshed by .github/workflows/profile-cards.yml using
+     https://github.com/stats-organization/github-readme-stats-action. -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=khayem487&show_icons=true&hide_rank=true&theme=tokyonight&hide_border=true">
-    <img src="https://github-readme-stats.vercel.app/api?username=khayem487&show_icons=true&hide_rank=true&theme=default&hide_border=true" width="410" alt="Khayem's public GitHub activity statistics">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/github-stats-dark.svg">
+    <img src="assets/profile/github-stats-light.svg" width="410" alt="Khayem's public GitHub activity statistics">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=khayem487&layout=compact&theme=tokyonight&hide_border=true">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khayem487&layout=compact&theme=default&hide_border=true" width="345" alt="Languages used across Khayem's public GitHub repositories">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/github-languages-dark.svg">
+    <img src="assets/profile/github-languages-light.svg" width="345" alt="Languages used across Khayem's public GitHub repositories">
   </picture>
+  <br><sub>Public GitHub data · refreshed daily.</sub>
 </p>
 
 ---
