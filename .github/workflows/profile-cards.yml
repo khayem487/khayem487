@@ -1,0 +1,104 @@
+name: Refresh public profile cards
+
+on:
+  schedule:
+    - cron: '23 4 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/profile-cards.yml]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-profile-cards
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+
+      # Empty core_version uses bundled core 2.2.0 from the action's frozen lockfile.
+      # GITHUB_TOKEN reads public stats; no personal token or private-repo access.
+      - name: Generate activity card (light)
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: stats
+          options: username=khayem487&show_icons=true&hide_rank=true&theme=default&hide_border=true
+          path: assets/profile/github-stats-light.svg
+          core_version: ''
+          fail_on_error: 'true'
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate activity card (dark)
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: stats
+          options: username=khayem487&show_icons=true&hide_rank=true&theme=tokyonight&hide_border=true
+          path: assets/profile/github-stats-dark.svg
+          core_version: ''
+          fail_on_error: 'true'
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate languages card (light)
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: top-langs
+          options: username=khayem487&layout=compact&theme=default&hide_border=true
+          path: assets/profile/github-languages-light.svg
+          core_version: ''
+          fail_on_error: 'true'
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate languages card (dark)
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: top-langs
+          options: username=khayem487&layout=compact&theme=tokyonight&hide_border=true
+          path: assets/profile/github-languages-dark.svg
+          core_version: ''
+          fail_on_error: 'true'
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate all four cards before replacing the last good version
+        shell: python
+        run: |
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          for card in ('stats', 'languages'):
+              for theme in ('light', 'dark'):
+                  path = Path(f'assets/profile/github-{card}-{theme}.svg')
+                  text = path.read_text(encoding='utf-8')
+                  root = ET.fromstring(text)
+                  assert root.tag == '{http://www.w3.org/2000/svg}svg', path
+                  assert 'Something went wrong' not in text, path
+                  assert len(list(root.iter())) > 10, path
+                  for element in root.iter():
+                      assert element.tag.rsplit('}', 1)[-1] not in ('script', 'foreignObject'), path
+                      for name, value in element.attrib.items():
+                          local_name = name.rsplit('}', 1)[-1].lower()
+                          assert not local_name.startswith('on'), path
+                          if local_name == 'href':
+                              assert value.startswith('#'), path
+                  print(f'Valid SVG: {path}')
+
+      - name: Commit refreshed cards only when they changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/profile/github-stats-*.svg assets/profile/github-languages-*.svg
+          if git diff --cached --quiet; then
+            echo 'Cards already up to date.'
+            exit 0
+          fi
+          git commit -m 'Refresh public GitHub profile cards'
+          git push origin HEAD:main
