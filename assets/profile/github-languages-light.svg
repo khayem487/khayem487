@@ -1,247 +1,32 @@
-
-      <svg
-        width="300"
-        height="165"
-        viewBox="0 0 300 165"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-labelledby="descId"
-      >
-        <title id="titleId"></title>
-        <desc id="descId"></desc>
-        <style>
-          .header {
-            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #2f80ed;
-            animation: fadeInAnimation 0.8s ease-in-out forwards;
-          }
-          @supports(-moz-appearance: auto) {
-            /* Selector detects Firefox */
-            .header { font-size: 15.5px; }
-          }
-          
-    @keyframes slideInAnimation {
-      from {
-        width: 0;
-      }
-      to {
-        width: calc(100%-100px);
-      }
-    }
-    @keyframes growWidthAnimation {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
-    .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #434d58;
-    }
-    @supports(-moz-appearance: auto) {
-      /* Selector detects Firefox */
-      .stat { font-size:12px; }
-    }
-    .bold { font-weight: 700 }
-    .lang-name {
-      font: 400 11px "Segoe UI", Ubuntu, Sans-Serif;
-      fill: #434d58;
-    }
-    .stagger {
-      opacity: 0;
-      animation: fadeInAnimation 0.3s ease-in-out forwards;
-    }
-    #rect-mask rect{
-      animation: slideInAnimation 1s ease-in-out forwards;
-    }
-    .lang-progress{
-      animation: growWidthAnimation 0.6s ease-in-out forwards;
-    }
-    .progress-background { fill: #ddd; }
-    
-          
-
-          
-      /* Animations */
-      @keyframes scaleInAnimation {
-        from {
-          transform: translate(-5px, 5px) scale(0);
-        }
-        to {
-          transform: translate(-5px, 5px) scale(1);
-        }
-      }
-      @keyframes fadeInAnimation {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    
-          
-        </style>
-
-        
-        <defs>
-          
-          
-        </defs>
-        
-
-        <rect
-          data-testid="card-bg"
-          class="card-bg"
-          x="0.5"
-          y="0.5"
-          rx="4.5"
-          height="99%"
-          stroke="#e4e2e2"
-          width="299"
-          fill="#fffefe"
-          stroke-opacity="0"
-        />
-
-        
-      <g
-        data-testid="card-title"
-        transform="translate(25, 35)"
-      >
-        <g transform="translate(0, 0)">
-      <text
-        x="0"
-        y="0"
-        class="header"
-        data-testid="header"
-      >Most Used Languages</text>
-    </g>
-      </g>
-    
-
-        <g
-          data-testid="main-card-body"
-          transform="translate(0, 55)"
-        >
-          
-    <svg data-testid="lang-items" x="25">
-      
-  
-      <mask id="rect-mask">
-          <rect x="0" y="0" width="250" height="8" fill="white" rx="5"/>
-        </mask>
-        
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="0"
-          y="0"
-          width="78.14"
-          height="8"
-          fill="#b07219"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="78.14"
-          y="0"
-          width="67.55"
-          height="8"
-          fill="#3572A5"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="145.69"
-          y="0"
-          width="60.21"
-          height="8"
-          fill="#f1e05a"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="205.9"
-          y="0"
-          width="21.56"
-          height="8"
-          fill="#e34c26"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="227.46"
-          y="0"
-          width="14.91"
-          height="8"
-          fill="#663399"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="242.37"
-          y="0"
-          width="17.63"
-          height="8"
-          fill="#012456"
-        />
-      
-      
-    <g transform="translate(0, 25)">
-      <g transform="translate(0, 0)"><g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#b07219" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Java 31.26%
-      </text>
-    </g>
-  </g><g transform="translate(0, 25)">
-    <g class="stagger" style="animation-delay: 600ms">
-      <circle cx="5" cy="6" r="5" fill="#3572A5" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python 27.02%
-      </text>
-    </g>
-  </g><g transform="translate(0, 50)">
-    <g class="stagger" style="animation-delay: 750ms">
-      <circle cx="5" cy="6" r="5" fill="#f1e05a" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        JavaScript 24.08%
-      </text>
-    </g>
-  </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#e34c26" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        HTML 8.63%
-      </text>
-    </g>
-  </g><g transform="translate(0, 25)">
-    <g class="stagger" style="animation-delay: 600ms">
-      <circle cx="5" cy="6" r="5" fill="#663399" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        CSS 5.96%
-      </text>
-    </g>
-  </g><g transform="translate(0, 50)">
-    <g class="stagger" style="animation-delay: 750ms">
-      <circle cx="5" cy="6" r="5" fill="#012456" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        PowerShell 3.05%
-      </text>
-    </g>
-  </g></g>
-    </g>
-  
-    </svg>
-  
-        </g>
-      </svg>
-    
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Behind the builds.</title>
+  <desc id="desc">Public repository language distribution: Java 31.26%, Python 27.02%, JavaScript 24.08%, HTML 8.63%, CSS 5.96%, PowerShell 3.05%</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f6f8ff"/><stop offset="1" stop-color="#eef3ff"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="1" fill="#dbe3f5"/></pattern>
+    <clipPath id="card"><rect x="1" y="1" width="478" height="318" rx="22"/></clipPath>
+    <clipPath id="bar"><rect x="28" y="116" width="424" height="14" rx="7"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="478" height="318" rx="22" fill="url(#bg)" stroke="#d6def0"/>
+  <g clip-path="url(#card)">
+    <rect width="480" height="320" fill="url(#dots)"/>
+    <circle cx="465" cy="0" r="125" fill="#8b5cf6" opacity=".055"/>
+    <circle cx="20" cy="330" r="110" fill="#06b6d4" opacity=".04"/>
+    <path d="M29 1h90" stroke="url(#accent)" stroke-width="3"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="28" y="34" fill="#7c3aed" font-size="10" font-weight="700" letter-spacing="1.8">02 / CODE PALETTE</text>
+    <text x="28" y="71" fill="#17233c" font-size="28" font-weight="750" letter-spacing="-.8">Behind the builds.</text>
+    <rect x="404" y="22" width="48" height="48" rx="15" fill="#ffffff" stroke="#d6def0"/>
+    <g transform="translate(416 34)" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10m6 10V4m6 16v-7m6 7V7"/></g>
+    <text x="28" y="95" fill="#52637e" font-size="12">Most used languages in public repositories</text><rect x="28.000" y="116" width="132.542" height="14" fill="#8b5cf6" clip-path="url(#bar)"/><circle cx="32" cy="166" r="4" fill="#8b5cf6"/>
+    <text data-testid="lang-name" x="45" y="171" fill="#17233c" font-size="13" font-weight="600"><tspan>Java </tspan><tspan x="230" text-anchor="end" fill="#52637e" font-size="12" font-weight="400">31.26%</tspan></text><rect x="160.542" y="116" width="114.565" height="14" fill="#06b6d4" clip-path="url(#bar)"/><circle cx="32" cy="209" r="4" fill="#06b6d4"/>
+    <text data-testid="lang-name" x="45" y="214" fill="#17233c" font-size="13" font-weight="600"><tspan>Python </tspan><tspan x="230" text-anchor="end" fill="#52637e" font-size="12" font-weight="400">27.02%</tspan></text><rect x="275.107" y="116" width="102.099" height="14" fill="#3b82f6" clip-path="url(#bar)"/><circle cx="32" cy="252" r="4" fill="#3b82f6"/>
+    <text data-testid="lang-name" x="45" y="257" fill="#17233c" font-size="13" font-weight="600"><tspan>JavaScript </tspan><tspan x="230" text-anchor="end" fill="#52637e" font-size="12" font-weight="400">24.08%</tspan></text><rect x="377.206" y="116" width="36.591" height="14" fill="#f97316" clip-path="url(#bar)"/><circle cx="254" cy="166" r="4" fill="#f97316"/>
+    <text data-testid="lang-name" x="267" y="171" fill="#17233c" font-size="13" font-weight="600"><tspan>HTML </tspan><tspan x="452" text-anchor="end" fill="#52637e" font-size="12" font-weight="400">8.63%</tspan></text><rect x="413.798" y="116" width="25.270" height="14" fill="#10b981" clip-path="url(#bar)"/><circle cx="254" cy="209" r="4" fill="#10b981"/>
+    <text data-testid="lang-name" x="267" y="214" fill="#17233c" font-size="13" font-weight="600"><tspan>CSS </tspan><tspan x="452" text-anchor="end" fill="#52637e" font-size="12" font-weight="400">5.96%</tspan></text><rect x="439.068" y="116" width="12.932" height="14" fill="#ec4899" clip-path="url(#bar)"/><circle cx="254" cy="252" r="4" fill="#ec4899"/>
+    <text data-testid="lang-name" x="267" y="257" fill="#17233c" font-size="13" font-weight="600"><tspan>PowerShell </tspan><tspan x="452" text-anchor="end" fill="#52637e" font-size="12" font-weight="400">3.05%</tspan></text><path d="M28 285h424" stroke="#d6def0"/>
+    <text x="28" y="305" fill="#52637e" font-size="10">By code size · selected languages, not proficiency</text>
+  </g>
+</svg>

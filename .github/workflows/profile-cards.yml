@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [.github/workflows/profile-cards.yml]
+    paths: [.github/workflows/profile-cards.yml, scripts/style_profile_cards.py]
 
 permissions:
   contents: read
@@ -67,6 +67,9 @@ jobs:
           core_version: ''
           fail_on_error: 'true'
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Apply the profile's custom card design
+        run: python scripts/style_profile_cards.py
 
       - name: Validate all four cards before replacing the last good version
         shell: python

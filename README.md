@@ -165,7 +165,8 @@ A **Python automation tool** born from a real student need: keeping up with hous
 
 ## 📊 Around GitHub
 
-<!-- Static cards refreshed by .github/workflows/profile-cards.yml using
+<!-- Custom design in scripts/style_profile_cards.py; public data refreshed by
+     .github/workflows/profile-cards.yml using
      https://github.com/stats-organization/github-readme-stats-action. -->
 <p align="center">
   <picture>
@@ -174,7 +175,7 @@ A **Python automation tool** born from a real student need: keeping up with hous
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/profile/github-languages-dark.svg">
-    <img src="assets/profile/github-languages-light.svg" width="345" alt="Languages used across Khayem's public GitHub repositories">
+    <img src="assets/profile/github-languages-light.svg" width="410" alt="Languages used across Khayem's public GitHub repositories">
   </picture>
   <br><sub>Public GitHub data · refreshed daily.</sub>
 </p>
