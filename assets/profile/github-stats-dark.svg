@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
   <title id="title">Code, in motion.</title>
-  <desc id="desc">Public GitHub statistics: 465 commits in the last year, 16 stars earned, 1 pull requests, 2 issues, 2 repositories contributed to in the last year.</desc>
+  <desc id="desc">Public GitHub statistics: 465 commits in the last year, 16 stars earned, 14 owned public non-fork repositories including the portfolio and profile, 10 curated web demos, and second place at Hackathon IA.</desc>
   <defs>
     <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10172a"/><stop offset="1" stop-color="#16162f"/></linearGradient>
     <linearGradient id="accent"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
@@ -24,10 +24,10 @@
     <text x="46" y="156" data-testid="commits" fill="#a78bfa" font-size="46" font-weight="750" letter-spacing="-1.5">465</text>
     <text x="47" y="183" fill="#a9b8d1" font-size="12" font-weight="600">Commits · last year</text><rect x="250" y="99" width="202" height="108" rx="16" fill="#19263d" stroke="#29354e"/>
     <text x="268" y="156" data-testid="stars" fill="#22d3ee" font-size="46" font-weight="750" letter-spacing="-1.5">16</text>
-    <text x="269" y="183" fill="#a9b8d1" font-size="12" font-weight="600">Stars earned</text><text x="28" y="246" data-testid="prs" fill="#f1f5ff" font-size="26" font-weight="700">1</text>
-    <text x="28" y="267" fill="#a9b8d1" font-size="11">Pull requests</text><text x="178" y="246" data-testid="issues" fill="#f1f5ff" font-size="26" font-weight="700">2</text>
-    <text x="178" y="267" fill="#a9b8d1" font-size="11">Issues</text><text x="316" y="246" data-testid="contribs" fill="#f1f5ff" font-size="26" font-weight="700">2</text>
-    <text x="316" y="267" fill="#a9b8d1" font-size="11">Repos · last year</text><path d="M28 285h424" stroke="#29354e"/>
+    <text x="269" y="183" fill="#a9b8d1" font-size="12" font-weight="600">Stars earned</text><text x="28" y="246" data-testid="public-repos" fill="#f1f5ff" font-size="26" font-weight="700">14</text>
+    <text x="28" y="267" fill="#a9b8d1" font-size="11">Public repos</text><text x="178" y="246" data-testid="live-demos" fill="#f1f5ff" font-size="26" font-weight="700">10</text>
+    <text x="178" y="267" fill="#a9b8d1" font-size="11">Live demos</text><text x="316" y="246" data-testid="hackathon-place" fill="#f1f5ff" font-size="26" font-weight="700">2nd</text>
+    <text x="316" y="267" fill="#a9b8d1" font-size="11">Hackathon IA</text><path d="M28 285h424" stroke="#29354e"/>
     <circle cx="32" cy="302" r="3" fill="#22d3ee"/>
     <text x="43" y="305" fill="#a9b8d1" font-size="10">Public GitHub activity</text>
     <text x="452" y="305" text-anchor="end" fill="#a9b8d1" font-size="10">@khayem487</text>

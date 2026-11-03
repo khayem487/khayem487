@@ -1,13 +1,16 @@
 """Apply the profile's visual identity to the generated public GitHub data.
 
 The pinned Stats Extended action remains responsible for fetching the metrics.
-This step reads its SVG values; it never estimates or changes the numbers.
+This step reads its SVG values and the reviewed public highlights inventory.
+It never estimates the numbers.
 """
 
 from html import escape
 from pathlib import Path
+import json
 import re
 import xml.etree.ElementTree as ET
+from urllib.parse import urlsplit
 
 
 ASSETS = Path(__file__).resolve().parents[1] / 'assets' / 'profile'
@@ -74,8 +77,27 @@ def shell(theme, title, description, kicker, icon, body):
 '''
 
 
-def stats_card(theme, values):
-    if set(values) != {'commits', 'stars', 'prs', 'issues', 'contribs'}:
+def read_highlights():
+    data = json.loads((ASSETS / 'highlights.json').read_text(encoding='utf-8'))
+    repos = data['public_repos']
+    names = repos['names']
+    if repos['owner'] != 'khayem487' or repos['exclude_forks'] is not True:
+        raise ValueError('Expected owned public non-fork repositories')
+    if not names or len(names) != len(set(names)) or any(not isinstance(name, str) or not name.strip() for name in names):
+        raise ValueError('Expected a nonempty unique repository inventory')
+    demos = data['demos']
+    urls = [demo['url'] for demo in demos]
+    if not demos or len(urls) != len(set(urls)):
+        raise ValueError('Expected a nonempty unique demo inventory')
+    for demo in demos:
+        url = urlsplit(demo['url'])
+        if not demo['name'] or url.scheme != 'https' or not (url.hostname or '').startswith('khayem-') or not (url.hostname or '').endswith('.vercel.app'):
+            raise ValueError('Expected a reviewed public demo URL')
+    return {'public-repos': str(len(names)), 'live-demos': str(len(demos))}
+
+
+def stats_card(theme, values, highlights):
+    if not {'commits', 'stars'}.issubset(values):
         raise ValueError('The source stats card is missing a metric')
     p = PALETTES[theme]
     body = []
@@ -86,17 +108,21 @@ def stats_card(theme, values):
         body.append(f'''<rect x="{x}" y="99" width="202" height="108" rx="16" fill="{p['tile']}" stroke="{p['border']}"/>
     <text x="{x + 18}" y="156" data-testid="{key}" fill="{accent}" font-size="46" font-weight="750" letter-spacing="-1.5">{escape(values[key])}</text>
     <text x="{x + 19}" y="183" fill="{p['muted']}" font-size="12" font-weight="600">{label}</text>''')
-    for x, key, label in ((28, 'prs', 'Pull requests'), (178, 'issues', 'Issues'),
-                          (316, 'contribs', 'Repos · last year')):
-        body.append(f'''<text x="{x}" y="246" data-testid="{key}" fill="{p['text']}" font-size="26" font-weight="700">{escape(values[key])}</text>
+    for x, key, value, label in (
+        (28, 'public-repos', highlights['public-repos'], 'Public repos'),
+        (178, 'live-demos', highlights['live-demos'], 'Live demos'),
+        (316, 'hackathon-place', '2nd', 'Hackathon IA'),
+    ):
+        body.append(f'''<text x="{x}" y="246" data-testid="{key}" fill="{p['text']}" font-size="26" font-weight="700">{escape(value)}</text>
     <text x="{x}" y="267" fill="{p['muted']}" font-size="11">{label}</text>''')
     body.append(f'''<path d="M28 285h424" stroke="{p['border']}"/>
     <circle cx="32" cy="302" r="3" fill="{p['cyan']}"/>
     <text x="43" y="305" fill="{p['muted']}" font-size="10">Public GitHub activity</text>
     <text x="452" y="305" text-anchor="end" fill="{p['muted']}" font-size="10">@khayem487</text>''')
     description = (f"Public GitHub statistics: {values['commits']} commits in the last year, "
-                   f"{values['stars']} stars earned, {values['prs']} pull requests, "
-                   f"{values['issues']} issues, {values['contribs']} repositories contributed to in the last year.")
+                   f"{values['stars']} stars earned, {highlights['public-repos']} owned public non-fork repositories "
+                   f"including the portfolio and profile, {highlights['live-demos']} curated web demos, "
+                   'and second place at Hackathon IA.')
     return shell(theme, 'Code, in motion.', description, '01 / OPEN SOURCE',
                  '<path d="m8 5-6 7 6 7m8-14 6 7-6 7m-3-16-3 18"/>', ''.join(body))
 
@@ -125,13 +151,14 @@ def languages_card(theme, languages):
 
 
 def main():
+    highlights = read_highlights()
     output = {}
     for theme in PALETTES:
         stats_path = ASSETS / f'github-stats-{theme}.svg'
         languages_path = ASSETS / f'github-languages-{theme}.svg'
         values, _ = source_values(stats_path)
         _, languages = source_values(languages_path)
-        output[stats_path] = stats_card(theme, values)
+        output[stats_path] = stats_card(theme, values, highlights)
         output[languages_path] = languages_card(theme, languages)
     # Parse every result before touching any of the last successful cards.
     for text in output.values():

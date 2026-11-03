@@ -1,0 +1,36 @@
+{
+  "public_repos": {
+    "owner": "khayem487",
+    "source": "https://api.github.com/users/khayem487/repos?type=owner&per_page=100",
+    "exclude_forks": true,
+    "names": [
+      "asl-recognition",
+      "car-rental-client",
+      "crous_notifier_me",
+      "data-dashboard",
+      "Dev-Web-ING-1-S2-public",
+      "Facial-Recognition-Attendance",
+      "khayem487",
+      "onetech-tender-agent",
+      "oop-game-java",
+      "portfolio",
+      "vencord-pdfviewer",
+      "vencord-splitlargemessages",
+      "vencord-userplugins",
+      "watch-party-relay-sync"
+    ]
+  },
+  "demos_verified_on": "2026-11-04",
+  "demos": [
+    {"name": "OneTech document workshop", "url": "https://khayem-onetech.vercel.app/"},
+    {"name": "ASL Recognition", "url": "https://khayem-asl.vercel.app/"},
+    {"name": "Purchasing dashboard", "url": "https://khayem-data-dashboard.vercel.app/"},
+    {"name": "Facial attendance", "url": "https://khayem-facial-attendance.vercel.app/"},
+    {"name": "Smart Home", "url": "https://khayem-smart-home.vercel.app/"},
+    {"name": "Loc Auto", "url": "https://khayem-car-rental.vercel.app/"},
+    {"name": "HealthRadar", "url": "https://khayem-healthradar.vercel.app/"},
+    {"name": "Watch Party", "url": "https://khayem-watch-party.vercel.app/"},
+    {"name": "Exchange Matcher", "url": "https://khayem-exchange-matcher.vercel.app/"},
+    {"name": "OOP Game", "url": "https://khayem-oop-game.vercel.app/"}
+  ]
+}
