@@ -6,7 +6,11 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [.github/workflows/profile-cards.yml, scripts/style_profile_cards.py]
+    paths:
+      - .github/workflows/profile-cards.yml
+      - scripts/style_profile_cards.py
+      - scripts/refresh_profile_highlights.py
+      - assets/profile/highlights.json
 
 permissions:
   contents: read
@@ -28,6 +32,11 @@ jobs:
 
       # Empty core_version uses bundled core 2.2.0 from the action's frozen lockfile.
       # GITHUB_TOKEN reads public stats; no personal token or private-repo access.
+      - name: Refresh owned public repository highlights
+        run: python scripts/refresh_profile_highlights.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate activity card (light)
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
@@ -99,6 +108,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add assets/profile/github-stats-*.svg assets/profile/github-languages-*.svg
+          git add assets/profile/highlights.json
           if git diff --cached --quiet; then
             echo 'Cards already up to date.'
             exit 0

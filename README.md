@@ -177,7 +177,7 @@ A **Python automation tool** born from a real student need: keeping up with hous
     <source media="(prefers-color-scheme: dark)" srcset="assets/profile/github-languages-dark.svg">
     <img src="assets/profile/github-languages-light.svg" width="410" alt="Languages used across Khayem's public GitHub repositories">
   </picture>
-  <br><sub>Public GitHub data · refreshed daily.</sub>
+  <br><sub>Public GitHub data · refreshed daily · <a href="docs/profile-cards.md">About these numbers</a></sub>
 </p>
 
 ---
